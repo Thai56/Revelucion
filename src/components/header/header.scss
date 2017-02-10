@@ -1,0 +1,48 @@
+header {
+  height:123px;
+  background-color:rgba(105,105,105,0.7);
+  position:relative;
+  #booking {
+    height:40px;
+    width:120px;
+    background:lighten(red,15%);
+    font-family: sans-serif;
+    color: white;
+    float: right;
+    margin-right:66px;
+    text-align: center;
+    line-height: 1.99em;
+    transition: .2s;
+    &:hover {
+      background:blue;
+      cursor: pointer;
+    }
+  }
+  nav{
+    height: 93px;
+    width: 670px;
+    float:right;
+    margin-right:14px;
+    text-align: right;
+    ul{
+      margin-bottom: 0;
+      display: inline-block;
+      li{
+        padding-left: 6px;
+        padding-right: 6px;
+        float:left;
+        display: inline;
+        line-height: 63px;
+        font-size: 16px;
+        span{
+          font-family: sans-serif;
+          color:white;
+          transition:.2s;
+          &:hover {
+            color:blue;
+          }
+        }
+      }
+    }
+  }
+}
