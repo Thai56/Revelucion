@@ -3,7 +3,9 @@ import './footer.scss'
 export default class Footer extends Component {
   render(){
     return (
-      <div id="footer"></div>
+      <section id="footer">
+        <div id='footer-col-right' className="col">156 W 500 S, Provo, UT 84601</div>
+      </section>
     )
   }
 }
