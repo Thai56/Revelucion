@@ -1,19 +1,13 @@
 
-  /* .react-simple-parallax-bg is generate by the component */
-    .react-simple-parallax-bg {
-        background-image: url('../../img/BarberShopLogo.jpg');
-        height: 750px;
-    }
-  #body {
-    height:100%;
+  .parallax {
+    /* The image used */
+   background-image: url("../../img/BarberShopLogo.jpg");
+   /* Set a specific height */
+   height: 900px;
+
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
   }
-  #footer {
-    height:143px;
-    width:100%;
-    background:lightgray;
-  }
-  section .parallax {
-        top: 200px;
-        margin: auto;
-        background-image: url('../../img/BarberShopLogo.jpg');
-    }

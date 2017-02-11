@@ -2,6 +2,11 @@ header {
   height:123px;
   background-color:rgba(105,105,105,0.7);
   position:relative;
+  #logo{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+  }
   #booking {
     height:40px;
     width:120px;
@@ -24,6 +29,7 @@ header {
     float:right;
     margin-right:14px;
     text-align: right;
+    clear:both;
     ul{
       margin-bottom: 0;
       display: inline-block;
@@ -46,3 +52,29 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 680px){
+  header{
+    height: 300px;
+    background-color:rgba(205,75,60,0.7);
+    }
+    nav{
+      display: none;
+    }
+    #logo{
+      margin-top: 12px;
+      width:100%;
+      height:50px;
+      text-align: center;
+    }
+    #booking {
+      display: none;
+    }
+    ul{
+      width: 100%;
+    }
+    li{
+      width:100%;
+      text-align:center;
+    }
+  }

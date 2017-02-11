@@ -6,6 +6,9 @@ export default class Header extends Component {
   render(){
     return (
       <header>
+        <section id='logo'>
+          REVOLUCION
+        </section>
       <div id='booking'>
       Online Booking
       </div>
