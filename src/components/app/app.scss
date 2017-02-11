@@ -1,8 +1,19 @@
-#body {
-  height:100%;
-}
-#footer {
-  height:143px;
-  width:100%;
-  background:lightgray;
-}
+
+  /* .react-simple-parallax-bg is generate by the component */
+    .react-simple-parallax-bg {
+        background-image: url('../../img/BarberShopLogo.jpg');
+        height: 750px;
+    }
+  #body {
+    height:100%;
+  }
+  #footer {
+    height:143px;
+    width:100%;
+    background:lightgray;
+  }
+  section .parallax {
+        top: 200px;
+        margin: auto;
+        background-image: url('../../img/BarberShopLogo.jpg');
+    }
