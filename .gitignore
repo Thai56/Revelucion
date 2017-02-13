@@ -1,0 +1,4 @@
+node_modules
+/backend/config.js
+/backend/node_modules
+.DS_STORE
