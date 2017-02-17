@@ -1,8 +1,10 @@
 var admins = require('../data/admin');
 module.exports = {
   postMatchingAdmin:postMatchingAdmin,
-  logoutAdmin:logoutAdmin
+  logoutAdmin:logoutAdmin,
+  getCurrentAdmin:getCurrentAdmin
 }
+
 function postMatchingAdmin(req,res,next){
   const admin = req.body
   for(var i = 0; i < admins.admin.length; i++){
@@ -20,4 +22,8 @@ function logoutAdmin(req,res){
   console.log('LOGGING OUT')
   console.log(req.session)
   res.status(200).send('LOGGED OUT')
+}
+
+function getCurrentAdmin(req,res){
+    res.status(200).send(req.session.admin)
 }

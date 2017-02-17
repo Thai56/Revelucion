@@ -1,6 +1,8 @@
 import React , {Component} from 'react'
 import {Link} from 'react-router'
 import './header.scss'
+import Linkify from 'react-linkify'
+const SQUARE_URL = 'https://squareup.com/appointments/book/75BKFJ631TKYD/the-revolucion-barbershop-co'
 
 export default class Header extends Component {
   render(){
@@ -9,21 +11,36 @@ export default class Header extends Component {
         <section id='logo'>
           REVOLUCION
         </section>
-      <div id='booking'>
-      Online Booking
-      </div>
+        <Linkify>
+          <a href={SQUARE_URL}>
+          <div id='booking'>
+          Online Booking
+          </div>
+          </a>
+        </Linkify>
+
         <nav>
         <ul >
-          <Link to='/artists'>
+
             <li>
-              <span>ARTISTS</span>
+              <span>
+                <Link
+                   to='/artists'
+                   activeStyle={{color:"red"}}>
+                ARTISTS
+              </Link>
+              </span>
             </li>
-          </Link>
-          <Link to='/services'>
+
             <li>
-              <span>SERVICES</span>
+              <span>
+                <Link
+                   to='/services'
+                   activeStyle={{color:"red"}}>
+                SERVICES
+              </Link>
+              </span>
             </li>
-          </Link>
           <Link to='/gallery'>
             <li>
               <span>GALLERY</span>

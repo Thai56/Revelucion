@@ -10,9 +10,9 @@ export default class App extends Component {
   render(){
 
     return (
-      <section className='parallax' id='app-container'>
+      <section id='app-container'>
       <Header />
-        <div id="body">
+        <div className='parallax' id="body">
         {this.props.children}
       </div>
       <Footer />
