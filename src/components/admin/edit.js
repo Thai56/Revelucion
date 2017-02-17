@@ -7,7 +7,7 @@ export default class AdminEdit extends Component {
     super(props)
 
     this.state = {
-      employees:null
+      employees:null,artists:null
     }
   }
   componentWillMount(){
@@ -28,15 +28,28 @@ export default class AdminEdit extends Component {
   }
   render(){
     let employees;
+    let artists;
     if(!!this.state.employees){
        employees = this.state.employees.map((employee,i) =>{
         return (
-          <li key={i}>
+          <li
+            key={i}
+            onClick={()=>{
+              hashHistory.push(`/admin/edit/employee/${employee.id}`)
+            }}>
             {employee.last_name},{employee.first_name}
           </li>
         )
       })
     }
+
+    // if(!!this.state.artists){
+    //   artists = this.state.artists.map((artist,i)=>{
+    //     return (
+    //       <h1>{artist.}</h1>
+    //     )
+    //   })
+    // }
     return (
       <section id='edit-container'>
         <div className="edit-controls">
@@ -52,7 +65,22 @@ export default class AdminEdit extends Component {
           <div>What would you like to Do?</div>
           <div id='admin-nav'>
             <ul>
-              <li><button>Edit PROFILE</button></li>
+              <li><button onClick={()=>{
+                  axios.get('/api/artists').then(response=>{
+                    this.setState({artists:response.data})
+                    console.log(this.state.artists)
+                  })
+                }}>Edit PROFILE</button></li>
+              {this.state.artists ? this.state.artists.map((artist,i)=>{
+                return (
+                  <h3
+                    key={i}
+                    onClick={()=>{
+                      hashHistory.push(`/admin/edit/profile/${artist.id}`)
+                    }}>
+                    {artist.title}</h3>
+                )
+              }) : null}
               <li><button>Edit GALLERY</button></li>
               <li><button>Edit SERVICES</button></li>
               <li><button>Edit PRODUCTS</button></li>

@@ -2,7 +2,7 @@ import React , {Component} from 'react';
 import './artists.scss';
 import axios from 'axios';
 import Artist from './artist'
-const ARTIST_URL = `http://localhost:1701/api/artists`;
+const ARTIST_URL = `/api/artists`;
 
 export default class Artists extends Component {
   constructor(props){
@@ -23,7 +23,7 @@ export default class Artists extends Component {
   render(){
     let artists;
     if(this.state.artists){
-      artists = this.state.artists.artists.map((artist,index)=>{
+      artists = this.state.artists.map((artist,index)=>{
         return (
           <Artist
             key={index}

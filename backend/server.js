@@ -43,10 +43,11 @@ var checkAdmin = function(req,res,next){
 
 // Artists  =  =  =  =  =  =  =  =  =  =  =  =
 app.get('/api/artists',artistController.getAllArtists)
+app.get('/api/artists/:id', artistController.getArtistById)
 
 // Admins  =  =  =  =  =  =  =  =  =  =  =  =
 app.post('/api/admin', adminController.postMatchingAdmin)
-app.post(`/api/admin/logout`, adminController.logoutAdmin)
+app.post('/api/admin/logout', adminController.logoutAdmin)
 app.get('/api/currentAdmin', checkAdmin , adminController.getCurrentAdmin) ;
 
 // Managers  =  =  =  =  =  =  =  =  =  =  =  =
@@ -54,7 +55,7 @@ app.get('/api/managers', managerController.getAllManagers);
 
 // Employees  =  =  =  =  =  =
 app.get('/api/employees', employeeController.getAllEmployees)
-
+app.get('/api/employees/:id', employeeController.getEmployeeById)
 //LISTENING ON PORT
 app.listen(port,function(){
   console.log('listing on port', port, new Date().toString())

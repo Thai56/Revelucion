@@ -1,4 +1,5 @@
 node_modules
 /backend/config.js
 /backend/node_modules
+/backend/data
 .DS_STORE
