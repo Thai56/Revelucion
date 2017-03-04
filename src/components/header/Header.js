@@ -46,9 +46,16 @@ export default class Header extends Component {
               <span>GALLERY</span>
             </li>
           </Link>
+          <Link to='/products'>
+            <li>
+              <span>PRODUCTS</span>
+            </li>
+          </Link>
+          <Link to='/directions'>
             <li>
               <span>DIRECTIONS & HOURS</span>
             </li>
+          </Link>
         </ul>
         </nav>
 

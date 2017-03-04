@@ -3,12 +3,12 @@
     /* The image used */
    background-image: url("../../img/BarberShopLogo.jpg");
    /* Set a specific height */
-   height: 1000px;
+   min-height: 1000px;
 
    /* Create the parallax scrolling effect */
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
-   background-size: contain;
+   background-size: cover;
    background-color: darkred;
   }

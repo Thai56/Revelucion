@@ -24,6 +24,11 @@ module.exports={
     modulesDirectories:['node_modules','src'],
     extensions:['','.js']
   },
+  externals: {
+    'cheerio': 'window',
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': true,
+  },
   module:{
     loaders:[
       {
@@ -33,7 +38,10 @@ module.exports={
           'react-hot','babel?presets[]=react,presets[]=es2015'
         ]
       },{test:/\.scss$/,loader:"style!css!sass"},
-        {test:/\.jpg$/,loader:"file-loader"}
+        {test:/\.jpg$/,loader:"file-loader"},
+        query: {
+        presets: ['react', 'es2015', 'stage-1']
+      }
     ]
   },
   plugins:[
