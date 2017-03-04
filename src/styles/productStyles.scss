@@ -1,0 +1,64 @@
+// =  =  =  =  =  = Product Container Component Style  =  =  =  =  =  =
+* {
+  box-sizing: border-box;
+}
+//  =  =  =  =  =  =  Product Container Main Container  =  =  =  =  =  =  =
+.product-container {
+  // width: 76%;
+  margin: auto;
+  min-height: 100vh;
+  background-color:rgba(255,255,255,0.7);
+  text-align: -webkit-center;
+  //   =  =  =  =  =  =  =  Product Main Header  =  =  =  =  =  =  =  =  =
+  header {
+    background-color:rgba(255,255,255,0.7);
+  }
+}
+
+.product-header-title {
+  height:121px;
+  width:360px;
+  margin: auto;
+  font-size: 56px;
+  color:lighten(blue, 15%);
+  text-align: center;
+  padding-top: 28px;
+}
+
+  //  =  =  =  =  =  =  Barber product header  =  =  =  =  =  =  =
+  #barber-products-header {
+    width: 30%;
+    font-size: 36px;
+    // border: 1px solid black;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .product-wrapper {
+    width:30%;
+    // border: 1px solid black;
+  }
+
+
+
+// =  =  =  =  Product Component style  =  =  =  =  =  =  =  =  =  =  =
+.product-info-wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.product-details {
+  // border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+}

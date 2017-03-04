@@ -1,0 +1,29 @@
+// Component Services
+#services-container {
+  min-height: 100vh;
+  background-color:rgba(255,255,255,0.7);
+
+  .artist-service-container {
+    float: left;
+    margin-left: 55px;
+
+    .artist-name {
+      font-size: 60px;
+      color:lighten(gray, 5%);
+    }
+
+  }
+
+}
+
+// Component Service
+.service-wrapper {
+  margin-bottom: 20px;
+  margin-top:20px;
+
+  li div{
+    margin-bottom: 10px;
+    color:lighten(gray, 5%);
+  }
+
+}

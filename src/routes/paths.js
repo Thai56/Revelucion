@@ -7,8 +7,10 @@ import Gallery from '../components/gallery/gallery'
 import Admin from '../components/admin/admin'
 import AdminEdit from '../components/admin/edit'
 import Employee from '../components/admin/employee'
-import EditProfile from 'components/admin/editProfile'
-
+import EditProfile from '../components/admin/editProfile'
+import DirectionsContainer from '../containers/DirectionsContainer'
+import ProductContainer from '../containers/ProductContainer'
+import GalleryContainer from '../containers/GalleryContainer'
 export default {
   App:App,
   Home:Home,
@@ -18,5 +20,8 @@ export default {
   Admin:Admin,
   AdminEdit:AdminEdit,
   Employee:Employee,
-  EditProfile:EditProfile
+  EditProfile:EditProfile,
+  DirectionsContainer:DirectionsContainer,
+  ProductContainer: ProductContainer,
+  GalleryContainer: GalleryContainer
 }
