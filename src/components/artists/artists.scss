@@ -1,6 +1,19 @@
 #artists {
   width: 100%;
   background-color:rgba(255,255,255,0.7);
+  header {
+    background-color:rgba(255,255,255,0.7);
+
+    .artist-header-title {
+      height:121px;
+      width:360px;
+      margin: auto;
+      font-size: 56px;
+      color:lighten(blue, 15%);
+      text-align: center;
+      padding-top: 28px;
+    }
+  }
 }
 
 // Artist  =  =  =  =  =  =  =  =  =  =

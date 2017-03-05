@@ -16,6 +16,11 @@ function Service(props){
 export default function Services(props){
     return (
       <div id='services-container'>
+        <header>
+          <div className='services-header-title'>
+            Services
+          </div>
+        </header>
         <section className='artist-service-container'>
           <span className='artist-name'>Esau</span>
           {serviceData.esauServices.map((serv,i) => {

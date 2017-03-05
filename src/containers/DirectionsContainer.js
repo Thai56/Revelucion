@@ -4,7 +4,7 @@ import MapContainer from './MapContainer.js';
 
 function Hours(props){
   return (
-    <div className="Hours-container">
+    <div className="hours-container">
     <div>Monday: <span className='hours'> 10am to 9pm</span></div>
     <div>Tuesday: <span className='hours'> 10am to 9pm</span></div>
     <div>Wednesday: <span className='hours'>closed</span></div>
@@ -16,12 +16,11 @@ function Hours(props){
   )
 }
 
-function Header(props){
+export function Header(props){
   return (
-    <div className="">
-      <h1>Revolucion Barber Shop</h1>
-      <span>156 W 500 S, Provo, UT 84601</span>
-    </div>
+    <header className="directions-header">
+      <div className='directions-header-title'>Directions and Hours</div>
+    </header>
   )
 }
 

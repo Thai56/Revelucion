@@ -46,11 +46,11 @@ export default class Header extends Component {
               <span>GALLERY</span>
             </li>
           </Link>
-          <Link to='/products'>
             <li>
-              <span>PRODUCTS</span>
+              <Link to='/products' activeStyle={{color:"red"}}>
+                <span>PRODUCTS</span>
+              </Link>
             </li>
-          </Link>
           <Link to='/directions'>
             <li>
               <span>DIRECTIONS & HOURS</span>

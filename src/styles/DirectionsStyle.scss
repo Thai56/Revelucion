@@ -1,12 +1,25 @@
 .Directions-container {
   background-color:rgba(255,255,255,0.7);
+  header {
+    background-color:rgba(255,255,255,0.7);
+
+    .directions-header-title {
+      height:121px;
+      width:660px;
+      margin: auto;
+      font-size: 56px;
+      color:lighten(blue, 15%);
+      text-align: center;
+      padding-top: 28px;
+    }
+  }
 }
 
-.Hours-container {
+.hours-container {
   color:gray;
   font-size: 46px;
   font-family: sans-serif;
 }
 .hours {
   color:black;
-} 
+}
