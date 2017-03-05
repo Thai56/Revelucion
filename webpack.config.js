@@ -39,9 +39,6 @@ module.exports={
         ]
       },{test:/\.scss$/,loader:"style!css!sass"},
         {test:/\.jpg$/,loader:"file-loader"},
-        query: {
-        presets: ['react', 'es2015', 'stage-1']
-      }
     ]
   },
   plugins:[

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -w src/test/helpers/browser.js --compilers js:babel-core/register --require ./src/test/helpers/test_helper.js src/test/containers/*.js --recursive ./src/test",
+    "test": "mocha -w src/test/helpers/browser.js --compilers js:babel-core/register --require ./src/test/helpers/test_helper.js src/test/containers/*.js --require ignore-styles --recursive ./src/test ",
     "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./",
     "test:watch": "npm run test -- --watch"
   },
@@ -47,6 +47,7 @@
     "enzyme": "^2.7.1",
     "expect": "^1.20.2",
     "fetch-mock": "^5.9.4",
+    "ignore-styles": "^5.0.1",
     "jquery": "^2.2.1",
     "jsdom": "^9.11.0",
     "mocha": "^3.2.0",

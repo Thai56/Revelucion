@@ -34,9 +34,11 @@ export default class Artists extends Component {
     }
     return (
       <section id='artists'>
-      <h1>
-      This is the Artist Page
-      </h1>
+      <header>
+      <div className="artist-header-title">
+        Artists
+      </div>
+    </header>
       {artists}
       </section>
     )
