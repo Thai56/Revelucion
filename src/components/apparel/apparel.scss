@@ -1,0 +1,32 @@
+.apparel-container {
+  header {
+    background-color:rgba(255,255,255,0.7);
+    .apparel-title {
+      font-size: 56px;
+      width: 250px;
+      margin: auto;
+      font-size: 56px;
+      color:lighten(blue, 15%);
+      text-align: center;
+      padding-top: 28px;
+   }
+  }
+  .shirt-image {
+    height: 400px;
+    width: 400px;
+    background: url('./shirt.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(90deg);
+    border: 10px solid black;
+    margin: auto;
+  }
+
+  .place-holder {
+    font-size: 36px;
+    color: yellow;
+    text-align: center;
+    background: purple;
+  }
+
+}

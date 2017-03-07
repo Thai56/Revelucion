@@ -1,14 +1,12 @@
-import React , { Component } from 'react'
-import IMG_URL from '../../img/BarbershopLogo.jpg'
-import Header from '../header/header'
-import Footer from '../footer/footer'
-import './reset.scss'
-import './app.scss'
-import { Parallax , Background} from 'react-parallax';
+import React, { Component } from 'react';
+import Header from '../header/Header';
+import Footer from '../footer/footer';
+import './reset.scss';
+import './app.scss';
 
 export default class App extends Component {
-  render(){
 
+  render() {
     return (
       <section id='app-container'>
       <Header />
@@ -18,6 +16,6 @@ export default class App extends Component {
       <Footer />
 
       </section>
-    )
+    );
   }
 }

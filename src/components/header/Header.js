@@ -1,11 +1,13 @@
-import React , {Component} from 'react'
-import {Link} from 'react-router'
-import './header.scss'
-import Linkify from 'react-linkify'
-const SQUARE_URL = 'https://squareup.com/appointments/book/75BKFJ631TKYD/the-revolucion-barbershop-co'
+import Linkify from 'react-linkify';
+import React, { Component } from 'react';
+import { Link } from 'react-router';
+import './header.scss';
+
+
+const SQUARE_URL = 'https://squareup.com/appointments/book/75BKFJ631TKYD/the-revolucion-barbershop-co';
 
 export default class Header extends Component {
-  render(){
+  render() {
     return (
       <header>
         <section id='logo'>
@@ -24,31 +26,27 @@ export default class Header extends Component {
 
             <li>
               <span>
-                <Link
-                   to='/artists'
-                   activeStyle={{color:"red"}}>
+                <Link to='/artists' activeStyle={{ color: 'red' }}>
                 ARTISTS
-              </Link>
+                </Link>
               </span>
             </li>
 
             <li>
               <span>
-                <Link
-                   to='/services'
-                   activeStyle={{color:"red"}}>
-                SERVICES
-              </Link>
+                <Link to='/services' activeStyle={{ color: 'red' }}>
+                  SERVICES
+                </Link>
               </span>
             </li>
-          <Link to='/gallery'>
+          <Link to='/gallery' activeStyle={{ color: 'red' }}>
             <li>
               <span>GALLERY</span>
             </li>
           </Link>
             <li>
-              <Link to='/products' activeStyle={{color:"red"}}>
-                <span>PRODUCTS</span>
+              <Link to='/products' activeStyle={{ color: 'red' }}>
+                <span>APPAREL</span>
               </Link>
             </li>
           <Link to='/directions'>
@@ -60,6 +58,6 @@ export default class Header extends Component {
         </nav>
 
       </header>
-    )
+    );
   }
 }
