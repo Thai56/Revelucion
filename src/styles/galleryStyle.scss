@@ -7,13 +7,20 @@
     // div inside of the header and the styles were taken from product styles need to find a way to transfer styles from scss files!! **
     .gallery-header-title {
       height:121px;
-      width:360px;
+      width:471px;
       margin: auto;
       font-size: 56px;
+      font-family: 'Diplomata SC', cursive;
       color:lighten(blue, 15%);
       text-align: center;
       padding-top: 28px;
     }
+  }
+
+  .instafeed-container {
+    width: 60%;
+    margin: auto;
+    padding-top: 24px;
   }
 
 }
@@ -32,86 +39,4 @@
   width:400px;
   margin-top: 30px;
   margin-bottom: 30px;
-}
-
-
-#pic1 {
-background: url("../img/Gallery/gallery1.jpg")no-repeat;
-background-size: cover;
-background-position: center;
-transform: rotate(90deg);
-}
-#pic2 {
-background: url("../img/Gallery/gallery2.jpg")no-repeat;
-background-size: cover;
-background-position: center;
-transform: rotate(90deg);
-
-}
-#pic3 {
-background: url("../img/Gallery/gallery3.jpg")no-repeat;
-background-size: cover;
-background-position: center;
-transform: rotate(90deg);
-}
-#pic4 {
-background: url("../img/Gallery/gallery4.jpg")no-repeat;
-background-size: cover;
-background-position: center;
-transform: rotate(90deg);
-}
-#pic5 {
-background: url("../img/Gallery/gallery5.jpg")no-repeat;
-background-size: cover;
-background-position: center;
-}
-#pic6 {
-background: url("../img/Gallery/gallery6.jpg")no-repeat;
-background-size: cover;
-background-position: center;
-transform: rotate(90deg);
-}
-#pic7 {
-background: url("../img/Gallery/gallery7.jpg")no-repeat;
-background-size: cover;
-background-position: center;
-transform: rotate(90deg);
-}
-#pic8 {
-background: url("../img/Gallery/gallery8.jpg")no-repeat;
-background-size: cover;
-background-position: center;
-transform: rotate(90deg);
-}
-#pic9 {
-background: url("../img/Gallery/gallery9.jpg")no-repeat;
-background-size: cover;
-background-position: center;
-transform: rotate(90deg);
-}
-#pic11 {
-  background: url("../img/Gallery/gallery11.jpg")no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-#pic12 {
-  background: url("../img/Gallery/gallery12.jpg")no-repeat;
-  background-size: cover;
-  background-position: center;
-  transform: rotate(90deg);
-
-}
-#pic13 {
-  background: url("../img/Gallery/gallery13.jpg")no-repeat;
-  background-size: cover;
-  background-position: center;
-  transform: rotate(90deg);
-
-}
-#pic14 {
-  background: url("../img/Gallery/gallery14.jpg")no-repeat;
-  background-size: cover;
-  background-position: center;
-  transform: rotate(90deg);
-
 }

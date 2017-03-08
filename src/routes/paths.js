@@ -1,4 +1,3 @@
-
 import App from '../components/app/app';
 import Home from '../components/home/home';
 import Artists from '../components/artists/artists';
@@ -11,6 +10,8 @@ import DirectionsContainer from '../containers/DirectionsContainer';
 import ProductContainer from '../containers/ProductContainer';
 import GalleryContainer from '../containers/GalleryContainer';
 import Apparel from '../components/apparel/apparel';
+import About from '../components/about/about';
+
 export default {
   App:App,
   Home:Home,
@@ -23,5 +24,6 @@ export default {
   DirectionsContainer:DirectionsContainer,
   ProductContainer: ProductContainer,
   GalleryContainer: GalleryContainer,
-  Apparel: Apparel
+  Apparel: Apparel,
+  About: About
 };

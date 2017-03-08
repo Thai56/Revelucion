@@ -6,7 +6,7 @@ function Hours() {
   return (
     <div className="hours-container">
     <div>Monday: <span className='hours'> 10am to 9pm</span></div>
-    <div>Tuesday: <span className='hours'> 10am to 9pm</span></div>
+    <div>Tuesday: <span className='hours'> 2pm to 9pm</span></div>
     <div>Wednesday: <span className='hours'>closed</span></div>
     <div>Thursday: <span className='hours'> 10am to 9pm</span></div>
     <div>Friday: <span className='hours'> 10am to 11:30pm</span></div>

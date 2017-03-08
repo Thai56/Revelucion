@@ -5,7 +5,7 @@ import paths from './paths';
 export default (
   <Route path='/' component={paths.App}>
   <IndexRoute component={paths.Home} />
-    <Route path='/artists' component={paths.Artists} />
+    <Route path='/artists' component={paths.About} />
     <Route path='/services' component={paths.Services} />
     <Route path='/gallery' component={paths.GalleryContainer} />
     <Route path='/products' component={paths.Apparel} />
