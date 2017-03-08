@@ -27,7 +27,7 @@ export default class Header extends Component {
             <li>
               <span>
                 <Link to='/artists' activeStyle={{ color: 'red' }}>
-                ARTISTS
+                ABOUT
                 </Link>
               </span>
             </li>

@@ -3,6 +3,7 @@ import Header from '../header/Header';
 import Footer from '../footer/footer';
 import './reset.scss';
 import './app.scss';
+// import '../../../node_modules/instafeed.js/instafeed.min.js';
 
 export default class App extends Component {
 

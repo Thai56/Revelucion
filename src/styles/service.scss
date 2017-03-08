@@ -3,13 +3,22 @@
   min-height: 100vh;
   background-color:rgba(255,255,255,0.7);
 
+  .service-container-wrapper {
+    width: 80%;
+    // border: 1px solid black;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .artist-service-container {
-    float: left;
-    margin-left: 55px;
-
+    margin-top: 36px;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     .artist-name {
       font-size: 60px;
-      color:lighten(gray, 5%);
+
     }
 
   }
@@ -18,9 +27,10 @@
 
     .services-header-title {
       height:121px;
-      width:360px;
+      width:500px;
       margin: auto;
       font-size: 56px;
+      font-family: 'Diplomata SC', cursive;
       color:lighten(blue, 15%);
       text-align: center;
       padding-top: 28px;
@@ -34,9 +44,16 @@
   margin-bottom: 20px;
   margin-top:20px;
 
+  li {
+    margin-bottom: 16px;
+    border-bottom: 1px solid black;
+    padding: 16px;
+  }
+
   li div{
     margin-bottom: 10px;
-    color:lighten(gray, 5%);
+    font-size: 36px;
+    // color:lighten(gray, 5%);
   }
 
 }
