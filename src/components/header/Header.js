@@ -22,38 +22,42 @@ export default class Header extends Component {
         </Linkify>
 
         <nav>
-        <ul >
-
+        <ul>
             <li>
               <span>
-                <Link to='/artists' activeStyle={{ color: 'red' }}>
+                <Link className='anchor' to='/artists' activeStyle={{ color: 'blue' }}>
                 ABOUT
                 </Link>
               </span>
             </li>
-
             <li>
               <span>
-                <Link to='/services' activeStyle={{ color: 'red' }}>
+                <Link className='anchor' to='/services' activeStyle={{ color: 'blue' }}>
                   SERVICES
                 </Link>
               </span>
             </li>
-          <Link to='/gallery' activeStyle={{ color: 'red' }}>
             <li>
-              <span>GALLERY</span>
+              <span>
+                <Link className='anchor' to='/gallery' activeStyle={{ color: 'blue' }}>
+                  GALLERY
+                </Link>
+              </span>
             </li>
-          </Link>
             <li>
-              <Link to='/products' activeStyle={{ color: 'red' }}>
-                <span>APPAREL</span>
-              </Link>
+              <span>
+                <Link className='anchor' to='/products' activeStyle={{ color: 'blue' }}>
+                  APPAREL
+                </Link>
+              </span>
             </li>
-          <Link to='/directions'>
             <li>
-              <span>DIRECTIONS & HOURS</span>
+              <span>
+                <Link className='anchor' to='/directions' activeStyle={{ color: 'blue' }}>
+                  DIRECTIONS & HOURS
+                </Link>
+              </span>
             </li>
-          </Link>
         </ul>
         </nav>
 

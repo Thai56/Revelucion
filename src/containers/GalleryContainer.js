@@ -21,9 +21,12 @@ export default class GalleryContainer extends Component {
         <header className='gallery-header'>
           <div className='gallery-header-title'>Gallery</div>
         </header>
-        <section className='instafeed-container'>
-          <div id='instafeed' />
-        </section>
+        <div className="instafeed-wrapper">
+          <section className='instafeed-container'>
+            <div id='instafeed' />
+          </section>
+        </div>
+
       </div>
     );
   }

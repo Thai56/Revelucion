@@ -8,6 +8,7 @@
     // border: 1px solid black;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
   }
@@ -53,7 +54,6 @@
   li div{
     margin-bottom: 10px;
     font-size: 36px;
-    // color:lighten(gray, 5%);
   }
 
 }

@@ -41,13 +41,14 @@ header {
         display: inline;
         line-height: 63px;
         font-size: 16px;
-        span{
+        .anchor {
+          color: white;
           font-family: sans-serif;
-          color:white;
-          transition:.2s;
+          transition: .2s;
+          text-decoration: none;
           &:hover {
-            color:blue;
-          }
+             color:blue;
+           }
         }
       }
     }
