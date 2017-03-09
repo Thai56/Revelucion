@@ -2,16 +2,26 @@ import React, { Component } from 'react';
 import '../styles/DirectionsStyle.scss';
 import MapContainer from './MapContainer.js';
 
+function Address() {
+  return (
+    <div className='address-wrapper'>
+      <span className='located'>Located</span><br />
+      156 W 500 S, Provo, UT 84601
+    </div>
+  );
+}
+
 function Hours() {
   return (
     <div className="hours-container">
-    <div>Monday: <span className='hours'> 10am to 9pm</span></div>
-    <div>Tuesday: <span className='hours'> 2pm to 9pm</span></div>
-    <div>Wednesday: <span className='hours'>closed</span></div>
-    <div>Thursday: <span className='hours'> 10am to 9pm</span></div>
-    <div>Friday: <span className='hours'> 10am to 11:30pm</span></div>
-    <div>Saturday: <span className='hours'> 10am to 11:30pm</span></div>
-    <div>Sunday: <span className='hours'> 10am to 6pm</span></div>
+      <Address />
+    <div><span className='hours'>Monday: 10am to 9pm</span></div>
+    <div><span className='hours'>Tuesday: 2pm to 9pm</span></div>
+    <div><span className='hours'>Wednesday: closed</span></div>
+    <div><span className='hours'>Thursday: 10am to 9pm</span></div>
+    <div><span className='hours'>Friday: 10am to 11:30pm</span></div>
+    <div><span className='hours'>Saturday: 10am to 11:30pm</span></div>
+    <div><span className='hours'>Sunday: 10am to 6pm</span></div>
     </div>
   );
 }
@@ -34,13 +44,17 @@ export default class DirectionsContainer extends Component {
     return (
       <div className="Directions-container">
         <Header /> <br />
-        <Hours /> <br />
-        <div style={{ height: 600, width: 300, background: 'red' }}>
+
+      <section className='directions-wrapper'>
+        <div style={{ height: 900, width: 500, border: '4px solid black', marginBottom: 36 }}>
           <MapContainer
             center={location}
             markers={markers}
           />
         </div>
+        <Hours /> <br />
+      </section>
+
       </div>
     );
   }

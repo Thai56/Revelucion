@@ -1,9 +1,12 @@
   // =  =  =  component container classname  =  =  =  =  =
 .gallery-container {
   text-align: -webkit-center;
+  // background-color:rgba(255,255,255,0.7);
+  padding-bottom: 16px;
   // =  =  =  =  =  gallery header element  =  =  =  =   =
   header {
     background-color:rgba(255,255,255,0.7);
+    margin-bottom: 16px;
     // div inside of the header and the styles were taken from product styles need to find a way to transfer styles from scss files!! **
     .gallery-header-title {
       height:121px;
@@ -17,11 +20,18 @@
     }
   }
 
-  .instafeed-container {
-    width: 60%;
+  .instafeed-wrapper {
+    width: 70%;
     margin: auto;
-    padding-top: 24px;
+    // background-color:rgba(255,255,255,0.7);
+    .instafeed-container {
+      width: 70%;
+      margin: auto;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
   }
+
 
 }
   // =  =  = classname for each picture  =  =  =  =
@@ -38,5 +48,5 @@
   height:400px;
   width:400px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }

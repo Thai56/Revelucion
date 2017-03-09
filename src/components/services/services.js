@@ -5,10 +5,13 @@ import '../../styles/service.scss';
 function Service(props) {
     return (
       <div className="service-wrapper">
-        <ul style={{ listStyleType: 'circle', margin: 'auto' }}>
-          <li><div>{props.service.name}</div>
+        <ul style={{ listStyleType: 'none', margin: 'auto' }}>
+          <li><div><u>{props.service.name}</u></div>
               <div>{props.service.notes}</div>
-              <div>$ {props.service.price / 100}</div></li>
+              <div>{props.deposit ? props.deposit : null}</div>
+              <div>{props.service.time ? <div>{props.service.time} minutes</div> : null}</div>
+              <div>$ {props.service.price / 100} {props.perHour ? props.perHour : null} </div>
+          </li>
         </ul>
       </div>
     );
@@ -45,6 +48,8 @@ export default function Services() {
                 <Service
                   key={i}
                   service={serv}
+                  deposit={'$50 Deposit'}
+                  perHour='/hr'
                 />
             )}
           </section>
