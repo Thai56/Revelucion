@@ -14,8 +14,6 @@
   .artist-service-container {
     margin-top: 36px;
     text-align: center;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
     .artist-name {
       font-size: 60px;
       font-family: 'Diplomata SC', cursive;
@@ -47,8 +45,19 @@
 
   li {
     margin-bottom: 16px;
-    border-bottom: 1px solid black;
+    border-width: thick;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
     padding: 16px;
+    box-shadow: 10px 10px 5px #555555;
+    .notes {
+      width: 60%;
+      margin: auto;
+      // text-align: center;
+      padding: 16px;
+      line-height: 1.5em;
+    }
   }
 
   li div{
