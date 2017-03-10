@@ -21,6 +21,9 @@ export default class GalleryContainer extends Component {
         <header className='gallery-header'>
           <div className='gallery-header-title'>Gallery</div>
         </header>
+        <div className="walk-in-text">
+          We take walk-ins and and kids of all ages
+        </div>
         <div className="instafeed-wrapper">
           <section className='instafeed-container'>
             <div id='instafeed' />

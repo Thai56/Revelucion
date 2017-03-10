@@ -5,7 +5,6 @@
 
   .service-container-wrapper {
     width: 80%;
-    // border: 1px solid black;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -19,7 +18,7 @@
     border-right: 1px solid black;
     .artist-name {
       font-size: 60px;
-
+      font-family: 'Diplomata SC', cursive;
     }
 
   }
@@ -32,7 +31,8 @@
       margin: auto;
       font-size: 56px;
       font-family: 'Diplomata SC', cursive;
-      color:lighten(blue, 15%);
+      // color:lighten(red, 15%);
+      color: black;
       text-align: center;
       padding-top: 28px;
     }

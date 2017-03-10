@@ -7,12 +7,19 @@ import './header.scss';
 const SQUARE_URL = 'https://squareup.com/appointments/book/75BKFJ631TKYD/the-revolucion-barbershop-co';
 
 export default class Header extends Component {
+
   render() {
     return (
       <header>
-        <section id='logo'>
+        <div id='logo'>
           REVOLUCION
-        </section>
+          <span className="phone-num">
+            THEREVOLUCIONBARBERSHOP@GMAIL.COM
+            (801) 607-2508
+            Se Habla Espanol
+          </span>
+        </div>
+
         <Linkify>
           <a href={SQUARE_URL}>
           <div id='booking'>
@@ -20,7 +27,6 @@ export default class Header extends Component {
           </div>
           </a>
         </Linkify>
-
         <nav>
         <ul>
             <li>

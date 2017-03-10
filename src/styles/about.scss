@@ -10,7 +10,8 @@
       margin: auto;
       font-family: 'Diplomata SC', cursive;
       font-size: 56px;
-      color:lighten(blue, 15%);
+      // color:lighten(red, 15%);
+      color: black;
       text-align: center;
       padding-top: 15px;
     }
@@ -39,8 +40,11 @@
   .place-holder {
     margin-top: 100px;
     font-size: 36px;
-    background: purple;
-    color: yellow;
+    // background: lighten(red, 15%);
+    background-color:rgba(255,255,255,0.7);
+    border: 1px solid black;
+    font-family: 'Diplomata SC', cursive;
+    color: lighten(black, 5%);
     text-align: center;
   }
 }
