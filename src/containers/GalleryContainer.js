@@ -1,5 +1,6 @@
 // import axios from 'axios';
 import React, { Component } from 'react';
+import Instafeed from 'instafeed.js';
 import '../styles/galleryStyle.scss';
 
 
