@@ -8,6 +8,8 @@ header {
     font-size: 30px;
     font-family: 'Diplomata SC', cursive;
     font-weight: bold;
+    padding-left: 16px;
+    padding-top: 26px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -41,7 +43,7 @@ header {
 
   }
   nav{
-    height: 59px;
+    height: 42px;
     width: 670px;
     float:right;
     margin-right:14px;
@@ -55,7 +57,7 @@ header {
         padding-right: 6px;
         float:left;
         display: inline;
-        line-height: 63px;
+        line-height: 43px;
         font-size: 16px;
         .anchor {
           color: white;

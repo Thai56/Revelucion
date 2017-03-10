@@ -12,7 +12,7 @@ export default class Header extends Component {
     return (
       <header>
         <div id='logo'>
-          REVOLUCION
+          Revolución
           <span className="phone-num">
             THEREVOLUCIONBARBERSHOP@GMAIL.COM
             (801) 607-2508

@@ -6,14 +6,15 @@
     margin-bottom: 16px;
     .about-title {
       height:121px;
-      width:660px;
+      width:860px;
+      line-height: .8em;
+      text-align: center;
       margin: auto;
       font-family: 'Diplomata SC', cursive;
       font-size: 56px;
-      // color:lighten(red, 15%);
       color: black;
       text-align: center;
-      padding-top: 15px;
+      padding-top: 16px;
     }
 
   }
@@ -32,9 +33,12 @@
   .summary-wrapper {
     line-height: 1.5em;
     font-size: 36px;
+    font-family: arial;
     width: 80%;
+    padding: 10px;
     margin: auto;
-    text-align: center;
+    padding-left: 60px;
+    // text-align: center;
   }
 
   .place-holder {

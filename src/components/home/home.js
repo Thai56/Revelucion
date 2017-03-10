@@ -5,9 +5,7 @@ export default class Home extends Component {
   render() {
     return (
       <section id='home'>
-        <div className="home-image">
-
-        </div>
+          <img id='home-img' src='../../src/img/table.png' />
       </section>
     );
   }
