@@ -1,4 +1,5 @@
 import React from 'react';
+import Linkify from 'react-linkify';
 import serviceData from './serviceData';
 import '../../styles/service.scss';
 
@@ -6,11 +7,11 @@ function Service(props) {
     return (
       <div className="service-wrapper">
         <ul style={{ listStyleType: 'none', margin: 'auto' }}>
-          <li><div><u>{props.service.name}</u></div>
-              <div>{props.service.notes}</div>
+          <li><div><u>{props.service.name}</u> $ {props.service.price / 100}{props.service.up ? props.service.up : null}</div>
+              <div>{props.service.notes} {props.service.insta ? <Linkify><a href={props.service.insta}>theboxcarkidd</a></Linkify> : null}</div>
               <div>{props.deposit ? props.deposit : null}</div>
               <div>{props.service.time ? <div>{props.service.time} minutes</div> : null}</div>
-              <div>$ {props.service.price / 100} {props.perHour ? props.perHour : null} </div>
+              <div>{props.service.perHour ? props.service.perHour : null} </div>
           </li>
         </ul>
       </div>
@@ -28,7 +29,7 @@ export default function Services() {
 
         <div className="service-container-wrapper">
           <section className='artist-service-container'>
-            <span className='artist-name'>Esau</span>
+            <span className='artist-name'>E’sau</span>
             {serviceData.esauServices.map((serv, i) =>
                <Service key={i} service={serv} />
             )}
@@ -49,7 +50,6 @@ export default function Services() {
                   key={i}
                   service={serv}
                   deposit={'$50 Deposit'}
-                  perHour='/hr'
                 />
             )}
           </section>

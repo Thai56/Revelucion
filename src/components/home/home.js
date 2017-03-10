@@ -3,6 +3,12 @@ import './home.scss';
 
 export default class Home extends Component {
   render() {
-    return <section id='home' />;
+    return (
+      <section id='home'>
+        <div className="home-image">
+
+        </div>
+      </section>
+    );
   }
 }

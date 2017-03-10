@@ -1,3 +1,14 @@
 #home {
-  height:600px;
+  // background-color:rgba(255,255,255,0.7);
+  height:1000px;
+  padding-top: 56px;
+  .home-image {
+    height: 800px;
+    width: 800px;
+    border: 1px solid black;
+    margin: auto;
+    background: url('../../img/home1.jpg')no-repeat;
+    background-position: -260px;
+    background-size: cover;
+  }
 }

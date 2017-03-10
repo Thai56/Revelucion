@@ -16,11 +16,11 @@ export default function About() {
     </header>
 
     <div id="about-pic" />
-    
+
       <section className='summary-wrapper'>
       The Revolucion Tattoo and Barber Shop in Provo is a place of community and
        acceptance. Our IMMEDIATE goal is to make you look amazing… whether you see E’Sau,
-       Chipi, or Handsome. The ULTIMATE goal is to make friends, build a happy world and
+       Chipi. The ULTIMATE goal is to make friends, build a happy world and
        have a community full of differences.
 
 Our clientele is forever growing because we’re cool people,
@@ -28,7 +28,7 @@ making cool people look great. Whatever your hair type – we know how to make
 you look incredible. You’ll leave feeling like gold.
       </section>
       <div className="place-holder">
-        Second Location Coming Soon!
+        Second Location Coming Soon!!
       </div>
     </div>
   );

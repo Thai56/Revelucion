@@ -14,10 +14,25 @@
       margin: auto;
       font-size: 56px;
       font-family: 'Diplomata SC', cursive;
-      color:lighten(blue, 15%);
+      // color:lighten(red, 15%);
+      color: black;
       text-align: center;
       padding-top: 28px;
     }
+  }
+
+  .walk-in-text {
+    width: 60%;
+    line-height: 1.5em;
+    border: 1px solid black;
+    margin: auto;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Diplomata SC', cursive;
+    background-color:rgba(255,255,255,0.7);
+    color: gray;
+    padding: 12px;
+    margin-bottom: 16px;
   }
 
   .instafeed-wrapper {

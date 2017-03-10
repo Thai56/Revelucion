@@ -10,7 +10,6 @@ export default class Apparel extends Component {
           <header>
             <div className="apparel-title">Apparel</div>
           </header>
-          <div className='place-holder'>More Coming Soon...</div>
 
           <div className="pitch-text">
             Come in today and get your Revolución t-shirt.
@@ -19,7 +18,10 @@ export default class Apparel extends Component {
             <div className='shirt-image' />
             <div className='shirt-image-1' />
             <div className='shirt-image-2' />
-          </section>
+
+            <div className='place-holder'>More Coming Soon...</div>
+
+        </section>
 
          </div>
       );
